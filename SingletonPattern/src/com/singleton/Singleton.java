@@ -10,7 +10,8 @@ public class Singleton {
 	public static Singleton getInstance() {
 		if (singleton == null) {
 			System.out.println("Object created for the first time");
-			return new Singleton();
+			singleton = new Singleton();
+			return singleton;
 		}
 		System.out.println("Object already created");
 		return singleton;
